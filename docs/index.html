@@ -17,7 +17,7 @@
             transform: scale(1);
             background: #8B61BF;
             width: 131px;
-            height: 490px;
+            height: auto;
             margin-left: 0px;
             margin-top: 0px;
             padding: 20px;
@@ -29,17 +29,30 @@
             margin-top: 0px;
             padding-bottom: 10px;
             text-decoration: none;
+            text-align: center;
         }
 
         .nabla {
             font-family: "Nabla";
             font-size: 30px;
-            margin: 0px;
-            transform: scale(1);
+            margin: auto;
         }
 
-        .nabla:hover {
-            transform: scale(1.2);
+        .scale {
+            font-size: 30px;
+            transition: 1s;
+        }
+
+        .scale:hover {
+            font-size: 40px;
+        }
+        .comfortaa{
+            font-family: "Comfortaa"
+        }
+        .by {
+            font-size: 12px;
+            margin-top: 140px;
+            margin-bottom: -10px;
         }
     </style>
 </head>
@@ -47,10 +60,13 @@
 <body>
     <div>
         <a href="index.html"><img src="GSAlogo.png" alt="GSA Logo" style="width:170px;height:170px;"></a>
-        <a href="index.html" class="nabla">Home</a>
-        <a href="leaders.html" class="nabla">Leaders</a>
-        <a href="socials.html" class="nabla">Socials</a>
-        <a href="photos.html" class="nabla">Photos</a>
+        <a href="index.html" class="nabla scale">Home</a>
+        <a href="leaders.html" class="nabla scale">Leaders</a>
+        <a href="socials.html" class="nabla scale">Socials</a>
+        <a href="photos.html" class="nabla scale">Photos</a>
+        </br>
+   
+        <p class="comfortaa by">Website coded by C.J. Feckovic</p>
 
     </div>
 
