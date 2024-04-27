@@ -13,23 +13,47 @@
             background-color: grey;
         }
 
-        div {
-            transform: scale(1);
+        .sidenav {
             background: #8B61BF;
-            width: 131px;
-            height: auto;
-            margin-left: 0px;
-            margin-top: 0px;
+            width: 135px;
+            height: 100%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            overflow-x: hidden;
             padding: 20px;
-            border: 5px solid #694A9C;
+            border-right: 5px solid #694A9C;
         }
 
-        a {
-            margin-left: -20px;
+
+
+        .sidenav a {
+            margin-left: 0px;
             margin-top: 0px;
             padding-bottom: 10px;
             text-decoration: none;
             text-align: center;
+        }
+
+        .sidenav .logo {
+            margin-left: -17px;
+        }
+
+        .main {
+            margin-left: 180px;
+            /* Same as the width of the sidebar */
+            padding: 0px 10px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
         }
 
         .nabla {
@@ -46,28 +70,38 @@
         .scale:hover {
             font-size: 40px;
         }
-        .comfortaa{
+
+        .comfortaa {
             font-family: "Comfortaa"
         }
+
         .by {
             font-size: 12px;
-            margin-top: 100px;
+            margin-top: 90px;
             margin-bottom: -10px;
         }
     </style>
 </head>
 
 <body>
-    <div>
-        <a href="index.html"><img src="GSAlogo.png" alt="GSA Logo" style="width:170px;height:170px;"></a>
+    <div class="sidenav">
+        <a href="index.html" class="logo"><img src="GSAlogo.png" alt="GSA Logo" style="width:170px;height:170px;"></a>
         <a href="index.html" class="nabla scale">Home</a>
         <a href="leaders.html" class="nabla scale">Leaders</a>
         <a href="socials.html" class="nabla scale">Socials</a>
         <a href="photos.html" class="nabla scale">Photos</a>
-    </br>
-       <p>WORK IN PROGRESS</p>
-   
+        </br>
+        <p>WORK IN PROGRESS</p>
+
         <p class="comfortaa by">Website coded by C.J. Feckovic</p>
+
+    </div>
+
+    <div class="main">
+        <h1>Title</h1>
+        <p>
+            Content
+        </p>
 
     </div>
 
